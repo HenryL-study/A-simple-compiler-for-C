@@ -1,0 +1,27 @@
+Global Table:
+name	|type	|size	|address	|isArray	|isConst	|para_num	|position	|offset	|
+|a	|0		|10		|0		|1		|0		|0		|0		|0		|
+|quicksort	|2		|1		|-1000		|0		|0		|2		|2		|0		|
+|main	|2		|1		|-1000		|0		|0		|0		|48		|0		|
+|.String0	|7		|1		|40		|0		|1		|0		|67		|0		|
+
+
+Function Table:
+
+Function:  main 
+name	|type	|size	|address	|isArray	|isConst	|para_num	|position	|offset	|
+|i		|0		|1		|40		|0		|0		|0		|50		|0		|
+|mm		|0		|1		|40		|0		|0		|0		|50		|4		|
+|tnum		|0		|1		|40		|0		|0		|0		|50		|8		|
+
+
+Function:  quicksort 
+name	|type	|size	|address	|isArray	|isConst	|para_num	|position	|offset	|
+|min		|5		|0		|-1		|0		|0		|0		|2		|0		|
+|max		|5		|1		|-1		|0		|0		|0		|2		|0		|
+|i		|0		|1		|40		|0		|0		|0		|4		|0		|
+|j		|0		|1		|40		|0		|0		|0		|4		|4		|
+|val		|0		|1		|40		|0		|0		|0		|5		|8		|
+|ttt		|0		|1		|40		|0		|0		|0		|5		|12		|
+
+

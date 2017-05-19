@@ -1,0 +1,411 @@
+global			
+text			
+BEGIN			_return_0
+ASSIGN	0		.fac0
+ASSIGN	.fac0		.te0
+ASSIGN	.te0		.exp0
+RET			.exp0
+END			_return_0
+BEGIN			_return_ab
+ASSIGN	a		.fac1
+ASSIGN	.fac1		.te1
+ASSIGN	.te1		.exp1
+ASSIGN	0		.fac2
+ASSIGN	.fac2		.te2
+ASSIGN	.te2		.exp2
+BNE	.exp1	.exp2	.label1
+ASSIGN	b		.fac3
+ASSIGN	.fac3		.te3
+ASSIGN	.te3		.exp3
+RET			.exp3
+GO			.label0
+SET			.label1
+ASSIGN	a		.fac4
+ASSIGN	.fac4		.te4
+ASSIGN	1		.fac5
+ASSIGN	.fac5		.te5
+SUB	.te4	.te5	.te4
+ASSIGN	.te4		.exp4
+ASSIGN	.exp4		a
+ASSIGN	a		.fac7
+ASSIGN	.fac7		.te7
+ASSIGN	.te7		.exp6
+PUSH			.exp6
+ASSIGN	b		.fac8
+ASSIGN	.fac8		.te8
+ASSIGN	.te8		.exp7
+PUSH			.exp7
+CALL		.fac6	_return_ab
+ASSIGN	.fac6		.te6
+ASSIGN	.te6		.exp5
+ASSIGN	.exp5		temp
+SET			.label0
+ASSIGN	b		.fac9
+ASSIGN	.fac9		.te9
+ASSIGN	temp		.fac10
+ASSIGN	.fac10		.te10
+ADD	.te9	.te10	.te9
+ASSIGN	.te9		.exp8
+RET			.exp8
+END			_return_ab
+BEGIN			_print_na
+SET			.label2
+ASSIGN	b		.fac11
+ASSIGN	.fac11		.te11
+ASSIGN	.te11		.exp9
+ASSIGN	0		.fac12
+ASSIGN	.fac12		.te12
+ASSIGN	.te12		.exp10
+BSE	.exp9	.exp10	.label3
+ASSIGN	b		.fac13
+ASSIGN	.fac13		.te13
+ASSIGN	1		.fac14
+ASSIGN	.fac14		.te14
+SUB	.te13	.te14	.te13
+ASSIGN	.te13		.exp11
+ASSIGN	.exp11		b
+ASSIGN	a		.fac15
+ASSIGN	.fac15		.te15
+ASSIGN	.te15		.exp12
+PD			.exp12
+GO			.label2
+SET			.label3
+END			b
+BEGIN			_echo_4
+ASSIGN	a		.fac16
+ASSIGN	.fac16		.te16
+ASSIGN	.te16		.exp13
+RET			.exp13
+END			_echo_4
+BEGIN			test_global
+ASSIGN	0		.fac17
+ASSIGN	.fac17		.te17
+ASSIGN	.te17		.exp14
+ASSIGN	.exp14		i
+ASSIGN	_var_1		.fac18
+ASSIGN	.fac18		.te18
+ASSIGN	_var_2		.fac19
+ASSIGN	.fac19		.te19
+ADD	.te18	.te19	.te18
+ASSIGN	_var_4		.fac20
+ASSIGN	.fac20		.te20
+ADD	.te18	.te20	.te18
+ASSIGN	.te18		.exp15
+PD			.exp15
+SET			.label4
+ASSIGN	i		.fac21
+ASSIGN	.fac21		.te21
+ASSIGN	.te21		.exp16
+ASSIGN	n		.fac22
+ASSIGN	.fac22		.te22
+ASSIGN	.te22		.exp17
+BLE	.exp16	.exp17	.label5
+ASSIGN	i		.fac24
+ASSIGN	.fac24		.te24
+ASSIGN	.te24		.exp19
+ASSFA	_int_array	.exp19	.fac23
+ASSIGN	.fac23		.te23
+ASSIGN	.te23		.exp18
+PD			.exp18
+ASSIGN	i		.fac25
+ASSIGN	.fac25		.te25
+ASSIGN	1		.fac26
+ASSIGN	.fac26		.te26
+ADD	.te25	.te26	.te25
+ASSIGN	.te25		.exp20
+ASSIGN	.exp20		i
+GO			.label4
+SET			.label5
+END			i
+CALL		.fac27	_return_0
+ASSIGN	.fac27		.te27
+ASSIGN	.te27		.exp21
+ASSIGN	0		.fac28
+ASSIGN	.fac28		.te28
+ASSIGN	.te28		.exp22
+BNE	.exp21	.exp22	.label7
+ASSIGN	_const_c_1		.fac29
+ASSIGN	.fac29		.te29
+ASSIGN	.te29		.exp23
+PUSH			.exp23
+ASSIGN	_const_4		.fac30
+ASSIGN	.fac30		.te30
+ASSIGN	.te30		.exp24
+PUSH			.exp24
+CALL		.t0	_print_na
+SET			.label7
+CALL		.fac31	_return_0
+ASSIGN	.fac31		.te31
+ASSIGN	.te31		.exp25
+ASSIGN	0		.fac32
+ASSIGN	.fac32		.te32
+ASSIGN	.te32		.exp26
+BEQ	.exp25	.exp26	.label9
+ASSIGN	_const_c_2		.fac33
+ASSIGN	.fac33		.te33
+ASSIGN	.te33		.exp27
+PUSH			.exp27
+ASSIGN	_const_4		.fac34
+ASSIGN	.fac34		.te34
+ASSIGN	.te34		.exp28
+PUSH			.exp28
+CALL		.t1	_print_na
+GO			.label8
+SET			.label9
+CALL		.fac35	_return_0
+ASSIGN	.fac35		.te35
+ASSIGN	.te35		.exp29
+ASSIGN	.exp29		_varm_1
+SET			.label8
+SET			.label10
+ASSIGN	_varm_1		.fac36
+ASSIGN	.fac36		.te36
+ASSIGN	.te36		.exp30
+ASSIGN	10		.fac37
+ASSIGN	.fac37		.te37
+ASSIGN	.te37		.exp31
+BLE	.exp30	.exp31	.label11
+ASSIGN	_varm_1		.fac38
+ASSIGN	.fac38		.te38
+ASSIGN	1		.fac39
+ASSIGN	.fac39		.te39
+ADD	.te38	.te39	.te38
+ASSIGN	.te38		.exp32
+ASSIGN	.exp32		_varm_1
+ASSIGN	_varm_1		.fac40
+ASSIGN	.fac40		.te40
+ASSIGN	1		.fac41
+ASSIGN	.fac41		.te41
+SUB	.te40	.te41	.te40
+ASSIGN	.te40		.exp33
+ASSIGN	_varm_1		.fac42
+ASSIGN	.fac42		.te42
+ASSIGN	1		.fac43
+ASSIGN	.fac43		.te43
+SUB	.te42	.te43	.te42
+ASSIGN	.te42		.exp34
+ASSTA	.exp34	.exp33	_int_array
+ASSIGN	_varm_1		.fac45
+ASSIGN	.fac45		.te45
+ASSIGN	1		.fac46
+ASSIGN	.fac46		.te46
+SUB	.te45	.te46	.te45
+ASSIGN	.te45		.exp36
+ASSFA	_int_array	.exp36	.fac44
+ASSIGN	.fac44		.te44
+ASSIGN	1		.fac47
+ASSIGN	.fac47		.te47
+ADD	.te44	.te47	.te44
+ASSIGN	.te44		.exp35
+ASSIGN	.exp35		_varm_1
+ASSIGN	_const_c_3		.fac48
+ASSIGN	.fac48		.te48
+ASSIGN	.te48		.exp37
+PUSH			.exp37
+ASSIGN	_const_4		.fac49
+ASSIGN	.fac49		.te49
+ASSIGN	.te49		.exp38
+PUSH			.exp38
+CALL		.t2	_print_na
+GO			.label10
+SET			.label11
+SET			.label12
+ASSIGN	_varm_1		.fac50
+ASSIGN	.fac50		.te50
+ASSIGN	.te50		.exp39
+ASSIGN	10		.fac51
+ASSIGN	.fac51		.te51
+ASSIGN	.te51		.exp40
+BSE	.exp39	.exp40	.label13
+PD	.String0	should not happend!!	
+GO			.label12
+SET			.label13
+ASSIGN	_const_c_1		.fac52
+ASSIGN	.fac52		.te52
+ASSIGN	.te52		.exp41
+PUSH			.exp41
+ASSIGN	_const_4		.fac53
+ASSIGN	.fac53		.te53
+ASSIGN	.te53		.exp42
+PUSH			.exp42
+CALL		.t3	_print_na
+ASSIGN	1	0	.fac54
+ASSIGN	.fac54		.te54
+ASSIGN	2	0	.fac55
+ASSIGN	_const_1		.fac56
+MUL	.fac55	.fac56	.fac55
+ASSIGN	.fac55		.te55
+SUB	.te54	.te55	.te54
+ASSIGN	_const_c_1		.fac59
+ASSIGN	.fac59		.te58
+ASSIGN	.te58		.exp45
+PUSH			.exp45
+CALL		.fac58	_echo_4
+ASSIGN	.fac58		.te57
+ASSIGN	1		.fac60
+ASSIGN	.fac60		.te59
+ADD	.te57	.te59	.te57
+ASSIGN	.te57		.exp44
+ASSIGN	.exp44	0	.fac57
+ASSIGN	4		.fac61
+DIV	.fac57	.fac61	.fac57
+ASSIGN	2		.fac62
+MUL	.fac57	.fac62	.fac57
+ASSIGN	.fac57		.te56
+SUB	.te54	.te56	.te54
+ASSIGN	97	0	.fac63
+ASSIGN	.fac63		.te60
+ADD	.te54	.te60	.te54
+ASSIGN	115	0	.fac64
+ASSIGN	_varm_1		.fac66
+ASSIGN	.fac66		.te62
+ASSIGN	2		.fac67
+ASSIGN	.fac67		.te63
+SUB	.te62	.te63	.te62
+ASSIGN	.te62		.exp46
+ASSFA	_int_array	.exp46	.fac65
+MUL	.fac64	.fac65	.fac64
+ASSIGN	.fac64		.te61
+SUB	.te54	.te61	.te54
+ASSIGN	.te54		.exp43
+ASSIGN	.exp43		_varm_1
+PD	.String1	1:	
+ASSIGN	1		.fac69
+ASSIGN	.fac69		.te65
+ASSIGN	.te65		.exp48
+ASSFA	_int_array	.exp48	.fac68
+ASSIGN	.fac68		.te64
+ASSIGN	.te64		.exp47
+PD			.exp47
+ASSIGN	_const_c_1		.fac71
+ASSIGN	.fac71		.te67
+ASSIGN	.te67		.exp50
+PUSH			.exp50
+CALL		.fac70	_echo_4
+ASSIGN	.fac70		.te66
+ASSIGN	.te66		.exp49
+ASSIGN	.exp49		_var_4
+PD	.String2	43:	
+ASSIGN	_var_4		.fac72
+ASSIGN	.fac72		.te68
+ASSIGN	.te68		.exp51
+PD			.exp51
+ASSIGN	0		.fac73
+ASSIGN	.fac73		.te69
+ASSIGN	.te69		.exp52
+ASSIGN	_var_4		.fac75
+ASSIGN	.fac75		.te71
+ASSIGN	.te71		.exp54
+PUSH			.exp54
+ASSIGN	3		.fac77
+ASSIGN	.fac77		.te73
+ASSIGN	.te73		.exp56
+ASSFA	_int_array	.exp56	.fac76
+ASSIGN	.fac76		.te72
+ASSIGN	.te72		.exp55
+PUSH			.exp55
+CALL		.fac74	_return_ab
+ASSIGN	.fac74		.te70
+ASSIGN	.te70		.exp53
+ASSTA	.exp53	.exp52	_int_array
+ASSIGN	1	0	.fac78
+ASSIGN	.fac78		.te74
+ASSIGN	2	0	.fac79
+ASSIGN	_const_1		.fac80
+MUL	.fac79	.fac80	.fac79
+ASSIGN	.fac79		.te75
+SUB	.te74	.te75	.te74
+ASSIGN	_const_c_1		.fac83
+ASSIGN	.fac83		.te78
+ASSIGN	.te78		.exp59
+PUSH			.exp59
+CALL		.fac82	_echo_4
+ASSIGN	.fac82		.te77
+ASSIGN	1		.fac84
+ASSIGN	.fac84		.te79
+ADD	.te77	.te79	.te77
+ASSIGN	.te77		.exp58
+ASSIGN	.exp58	0	.fac81
+ASSIGN	4		.fac85
+DIV	.fac81	.fac85	.fac81
+ASSIGN	2		.fac86
+MUL	.fac81	.fac86	.fac81
+ASSIGN	.fac81		.te76
+SUB	.te74	.te76	.te74
+ASSIGN	97	0	.fac87
+ASSIGN	.fac87		.te80
+ADD	.te74	.te80	.te74
+ASSIGN	115	0	.fac88
+ASSIGN	10		.fac90
+ASSIGN	.fac90		.te82
+ASSIGN	2		.fac91
+ASSIGN	.fac91		.te83
+SUB	.te82	.te83	.te82
+ASSIGN	.te82		.exp60
+ASSFA	_int_array	.exp60	.fac89
+MUL	.fac88	.fac89	.fac88
+ASSIGN	.fac88		.te81
+SUB	.te74	.te81	.te74
+ASSIGN	.te74		.exp57
+ASSIGN	1		.t4
+BNE	.t4	.exp57	.label15
+PD	.String3	wrong!	
+GO			.label14
+SET			.label15
+ASSIGN	-1046		.t5
+BNE	.t5	.exp57	.label16
+ASSIGN	_const_c_2		.fac92
+ASSIGN	.fac92		.te84
+ASSIGN	.te84		.exp61
+PUSH			.exp61
+CALL		.t6	_echo_4
+PD	.String4	right!	
+ASSIGN	2		.fac94
+ASSIGN	.fac94		.te86
+ASSIGN	.te86		.exp63
+ASSFA	_int_array	.exp63	.fac93
+ASSIGN	.fac93		.te85
+ASSIGN	.te85		.exp62
+PD			.exp62
+GO			.label14
+SET			.label16
+ASSIGN	2		.t7
+BNE	.t7	.exp57	.label17
+PD	.String5	wrong	
+GO			.label14
+SET			.label17
+PD	.String6	wrong	
+SET			.label14
+PD	.String7	is a:	
+ASSIGN	_const_c_3		.fac95
+ASSIGN	.fac95		.te87
+ASSIGN	.te87		.exp64
+PD			.exp64
+RD			_var_1
+RD			_var_2
+RD			_
+ASSIGN	_var_1		.fac96
+ASSIGN	.fac96		.te88
+ASSIGN	.te88		.exp65
+PD			.exp65
+CALL		.t8	test_global
+RD			_var_1
+RD			_var_2
+ASSIGN	_var_1		.fac97
+ASSIGN	.fac97		.te89
+ASSIGN	.te89		.exp66
+ASSIGN	_var_2		.fac98
+ASSIGN	.fac98		.te90
+ASSIGN	.te90		.exp67
+BL	.exp66	.exp67	.label19
+PD	.String8	_var_1 <= _var_2	
+SET			.label19
+ASSIGN	_var_1		.fac99
+ASSIGN	.fac99		.te91
+ASSIGN	.te91		.exp68
+ASSIGN	_var_2		.fac100
+ASSIGN	.fac100		.te92
+ASSIGN	.te92		.exp69
+BS	.exp68	.exp69	.label21
+PD	.String9	_var_1 >= _var_2	
+SET			.label21

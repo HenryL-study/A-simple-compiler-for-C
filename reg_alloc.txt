@@ -1,0 +1,13 @@
+quicksort:
+a: 6
+i: 2
+j: 3
+max: 5
+min: 4
+ttt: 0
+val: 1
+main:
+a: 1
+i: 0
+mm: 2
+tnum: 3

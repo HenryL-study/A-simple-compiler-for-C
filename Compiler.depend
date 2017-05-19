@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1482977458 source:c:\users\henry\desktop\ct\hw4\compiler\compiler_henry.cpp
+	"stdafx.h"
+
+1480175811 c:\users\henry\desktop\ct\hw4\compiler\stdafx.h
+	"targetver.h"
+	<stdio.h>
+	<tchar.h>
+	<string>
+	<iostream>
+	<cstring>
+	<ctype.h>
+	<sstream>
+	<fstream>
+	<cctype>
+	<algorithm>
+	"lexical_analysis.h"
+	"types_tools.h"
+	"parser.h"
+	"Symbol_table.h"
+
+1480243306 c:\users\henry\desktop\ct\hw4\compiler\lexical_analysis.h
+	<string>
+	<iostream>
+	<cstring>
+	<ctype.h>
+	<sstream>
+	"types_tools.h"
+
+1479223134 c:\users\henry\desktop\ct\hw4\compiler\types_tools.h
+	<sstream>
+	<string>
+
+1482976975 c:\users\henry\desktop\ct\hw4\compiler\parser.h
+	<string>
+	<queue>
+	"lexical_analysis.h"
+	"types_tools.h"
+	"Symbol_table.h"
+	"midcode.h"
+
+1483197773 c:\users\henry\desktop\ct\hw4\compiler\symbol_table.h
+	<set>
+	<map>
+	<vector>
+
+1482980835 c:\users\henry\desktop\ct\hw4\compiler\midcode.h
+	<vector>
+	"BB_Manager.h"
+
+1483219057 source:c:\users\henry\desktop\ct\hw4\compiler\lexical_analysis.cpp
+	"stdafx.h"
+	"lexical_analysis.h"
+
+1483219597 source:c:\users\henry\desktop\ct\hw4\compiler\midcode.cpp
+	"stdafx.h"
+	"midcode.h"
+
+1482977545 source:c:\users\henry\desktop\ct\hw4\compiler\parser.cpp
+	"stdafx.h"
+	"parser.h"
+
+1479043298 source:c:\users\henry\desktop\ct\hw4\compiler\stdafx.cpp
+	"stdafx.h"
+
+1480853989 source:c:\users\henry\desktop\ct\hw4\compiler\symbol_table.cpp
+	"stdafx.h"
+	"Symbol_table.h"
+	<fstream>
+
+1483219051 c:\users\henry\desktop\ct\hw4\compiler\targetver.h
+
+1483076112 c:\users\henry\desktop\ct\hw4\compiler\bb_manager.h
+	"Basic_Block.h"
+	<vector>
+	<map>
+	<algorithm>
+
+1483197794 c:\users\henry\desktop\ct\hw4\compiler\basic_block.h
+	<vector>
+
+1483081398 source:c:\users\henry\desktop\ct\hw4\compiler\basic_block.cpp
+	"stdafx.h"
+	"Basic_Block.h"
+
+1483205522 source:c:\users\henry\desktop\ct\hw4\compiler\bb_manager.cpp
+	"stdafx.h"
+	"BB_Manager.h"
+

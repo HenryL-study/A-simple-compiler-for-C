@@ -1,0 +1,287 @@
+global			
+int	10		a
+text			
+BEGIN			quicksort
+ASSIGN	min		.fac1
+ASSIGN	.fac1		.te1
+ASSIGN	.te1		.exp1
+ASSFA	a	.exp1	.fac0
+ASSIGN	.fac0		.te0
+ASSIGN	.te0		.exp0
+ASSIGN	.exp0		val
+ASSIGN	min		.fac2
+ASSIGN	.fac2		.te2
+ASSIGN	.te2		.exp2
+ASSIGN	.exp2		i
+ASSIGN	max		.fac3
+ASSIGN	.fac3		.te3
+ASSIGN	1		.fac4
+ASSIGN	.fac4		.te4
+SUB	.te3	.te4	.te3
+ASSIGN	.te3		.exp3
+ASSIGN	.exp3		j
+ASSIGN	max		.fac5
+ASSIGN	.fac5		.te5
+ASSIGN	min		.fac6
+ASSIGN	.fac6		.te6
+SUB	.te5	.te6	.te5
+ASSIGN	.te5		.exp4
+ASSIGN	1		.fac7
+ASSIGN	.fac7		.te7
+ASSIGN	.te7		.exp5
+BSE	.exp4	.exp5	.label1
+ASSIGN	i		.fac8
+ASSIGN	.fac8		.te8
+ASSIGN	.te8		.exp6
+ASSIGN	.exp6		ttt
+SET			.label2
+ASSIGN	i		.fac9
+ASSIGN	.fac9		.te9
+ASSIGN	.te9		.exp7
+ASSIGN	j		.fac10
+ASSIGN	.fac10		.te10
+ASSIGN	.te10		.exp8
+BLE	.exp7	.exp8	.label3
+SET			.label4
+ASSIGN	j		.fac11
+ASSIGN	.fac11		.te11
+ASSIGN	.te11		.exp9
+ASSIGN	i		.fac12
+ASSIGN	.fac12		.te12
+ASSIGN	.te12		.exp10
+BSE	.exp9	.exp10	.label5
+ASSIGN	j		.fac14
+ASSIGN	.fac14		.te14
+ASSIGN	.te14		.exp12
+ASSFA	a	.exp12	.fac13
+ASSIGN	.fac13		.te13
+ASSIGN	.te13		.exp11
+ASSIGN	val		.fac15
+ASSIGN	.fac15		.te15
+ASSIGN	.te15		.exp13
+BLE	.exp11	.exp13	.label7
+ASSIGN	i		.fac16
+ASSIGN	.fac16		.te16
+ASSIGN	.te16		.exp14
+ASSIGN	j		.fac18
+ASSIGN	.fac18		.te18
+ASSIGN	.te18		.exp16
+ASSFA	a	.exp16	.fac17
+ASSIGN	.fac17		.te17
+ASSIGN	.te17		.exp15
+ASSTA	.exp15	.exp14	a
+ASSIGN	i		.fac19
+ASSIGN	.fac19		.te19
+ASSIGN	1		.fac20
+ASSIGN	.fac20		.te20
+ADD	.te19	.te20	.te19
+ASSIGN	.te19		.exp17
+ASSIGN	.exp17		i
+ASSIGN	j		.fac21
+ASSIGN	.fac21		.te21
+ASSIGN	.te21		.exp18
+ASSIGN	.exp18		ttt
+ASSIGN	j		.fac22
+ASSIGN	.fac22		.te22
+ASSIGN	20		.fac23
+ASSIGN	.fac23		.te23
+SUB	.te22	.te23	.te22
+ASSIGN	.te22		.exp19
+ASSIGN	.exp19		j
+SET			.label7
+ASSIGN	j		.fac24
+ASSIGN	.fac24		.te24
+ASSIGN	1		.fac25
+ASSIGN	.fac25		.te25
+SUB	.te24	.te25	.te24
+ASSIGN	.te24		.exp20
+ASSIGN	.exp20		j
+ASSIGN	j		.fac26
+ASSIGN	.fac26		.te26
+ASSIGN	.te26		.exp21
+ASSIGN	0		.fac27
+ASSIGN	.fac27		.te27
+ASSIGN	.te27		.exp22
+BS	.exp21	.exp22	.label9
+ASSIGN	j		.fac28
+ASSIGN	.fac28		.te28
+ASSIGN	.te28		.exp23
+ASSIGN	.exp23		ttt
+SET			.label9
+GO			.label4
+SET			.label5
+ASSIGN	ttt		.fac29
+ASSIGN	.fac29		.te29
+ASSIGN	.te29		.exp24
+ASSIGN	.exp24		j
+SET			.label10
+ASSIGN	i		.fac30
+ASSIGN	.fac30		.te30
+ASSIGN	.te30		.exp25
+ASSIGN	j		.fac31
+ASSIGN	.fac31		.te31
+ASSIGN	.te31		.exp26
+BLE	.exp25	.exp26	.label11
+ASSIGN	i		.fac33
+ASSIGN	.fac33		.te33
+ASSIGN	.te33		.exp28
+ASSFA	a	.exp28	.fac32
+ASSIGN	.fac32		.te32
+ASSIGN	.te32		.exp27
+ASSIGN	val		.fac34
+ASSIGN	.fac34		.te34
+ASSIGN	.te34		.exp29
+BSE	.exp27	.exp29	.label13
+ASSIGN	j		.fac35
+ASSIGN	.fac35		.te35
+ASSIGN	.te35		.exp30
+ASSIGN	i		.fac37
+ASSIGN	.fac37		.te37
+ASSIGN	.te37		.exp32
+ASSFA	a	.exp32	.fac36
+ASSIGN	.fac36		.te36
+ASSIGN	.te36		.exp31
+ASSTA	.exp31	.exp30	a
+ASSIGN	i		.fac38
+ASSIGN	.fac38		.te38
+ASSIGN	.te38		.exp33
+ASSIGN	.exp33		ttt
+ASSIGN	i		.fac39
+ASSIGN	.fac39		.te39
+ASSIGN	20		.fac40
+ASSIGN	.fac40		.te40
+ADD	.te39	.te40	.te39
+ASSIGN	.te39		.exp34
+ASSIGN	.exp34		i
+SET			.label13
+ASSIGN	i		.fac41
+ASSIGN	.fac41		.te41
+ASSIGN	1		.fac42
+ASSIGN	.fac42		.te42
+ADD	.te41	.te42	.te41
+ASSIGN	.te41		.exp35
+ASSIGN	.exp35		i
+ASSIGN	i		.fac43
+ASSIGN	.fac43		.te43
+ASSIGN	.te43		.exp36
+ASSIGN	10		.fac44
+ASSIGN	.fac44		.te44
+ASSIGN	.te44		.exp37
+BLE	.exp36	.exp37	.label15
+ASSIGN	i		.fac45
+ASSIGN	.fac45		.te45
+ASSIGN	.te45		.exp38
+ASSIGN	.exp38		ttt
+SET			.label15
+GO			.label10
+SET			.label11
+ASSIGN	ttt		.fac46
+ASSIGN	.fac46		.te46
+ASSIGN	.te46		.exp39
+ASSIGN	.exp39		i
+GO			.label2
+SET			.label3
+ASSIGN	i		.fac47
+ASSIGN	.fac47		.te47
+ASSIGN	.te47		.exp40
+ASSIGN	val		.fac48
+ASSIGN	.fac48		.te48
+ASSIGN	.te48		.exp41
+ASSTA	.exp41	.exp40	a
+ASSIGN	min		.fac49
+ASSIGN	.fac49		.te49
+ASSIGN	.te49		.exp42
+PUSH			.exp42
+ASSIGN	i		.fac50
+ASSIGN	.fac50		.te50
+ASSIGN	.te50		.exp43
+PUSH			.exp43
+CALL			quicksort
+ASSIGN	i		.fac51
+ASSIGN	.fac51		.te51
+ASSIGN	1		.fac52
+ASSIGN	.fac52		.te52
+ADD	.te51	.te52	.te51
+ASSIGN	.te51		.exp44
+PUSH			.exp44
+ASSIGN	max		.fac53
+ASSIGN	.fac53		.te53
+ASSIGN	.te53		.exp45
+PUSH			.exp45
+CALL			quicksort
+SET			.label1
+RET			
+END			quicksort
+BEGIN			main
+ASSIGN	0		.fac0
+ASSIGN	.fac0		.te0
+ASSIGN	.te0		.exp0
+ASSIGN	.exp0		i
+SET			.label16
+ASSIGN	i		.fac1
+ASSIGN	.fac1		.te1
+ASSIGN	.te1		.exp1
+ASSIGN	10		.fac2
+ASSIGN	.fac2		.te2
+ASSIGN	.te2		.exp2
+BLE	.exp1	.exp2	.label17
+RD			tnum
+ASSIGN	i		.fac3
+ASSIGN	.fac3		.te3
+ASSIGN	.te3		.exp3
+ASSIGN	tnum		.fac4
+ASSIGN	.fac4		.te4
+ASSIGN	.te4		.exp4
+ASSTA	.exp4	.exp3	a
+ASSIGN	i		.fac5
+ASSIGN	.fac5		.te5
+ASSIGN	1		.fac6
+ASSIGN	.fac6		.te6
+ADD	.te5	.te6	.te5
+ASSIGN	.te5		.exp5
+ASSIGN	.exp5		i
+GO			.label16
+SET			.label17
+ASSIGN	0		.fac7
+ASSIGN	.fac7		.te7
+ASSIGN	.te7		.exp6
+ASSIGN	.exp6		mm
+ASSIGN	mm		.fac8
+ASSIGN	.fac8		.te8
+ASSIGN	.te8		.exp7
+PUSH			.exp7
+ASSIGN	10		.fac9
+ASSIGN	.fac9		.te9
+ASSIGN	.te9		.exp8
+PUSH			.exp8
+CALL			quicksort
+ASSIGN	0		.fac10
+ASSIGN	.fac10		.te10
+ASSIGN	.te10		.exp9
+ASSIGN	.exp9		i
+SET			.label18
+ASSIGN	i		.fac11
+ASSIGN	.fac11		.te11
+ASSIGN	.te11		.exp10
+ASSIGN	10		.fac12
+ASSIGN	.fac12		.te12
+ASSIGN	.te12		.exp11
+BLE	.exp10	.exp11	.label19
+ASSIGN	i		.fac14
+ASSIGN	.fac14		.te14
+ASSIGN	.te14		.exp13
+ASSFA	a	.exp13	.fac13
+ASSIGN	.fac13		.te13
+ASSIGN	.te13		.exp12
+PD			.exp12
+PD	.String0	 	
+ASSIGN	i		.fac15
+ASSIGN	.fac15		.te15
+ASSIGN	1		.fac16
+ASSIGN	.fac16		.te16
+ADD	.te15	.te16	.te15
+ASSIGN	.te15		.exp14
+ASSIGN	.exp14		i
+GO			.label18
+SET			.label19
+RET			

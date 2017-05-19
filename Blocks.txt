@@ -1,0 +1,565 @@
+----------------------------------------
+Block 0
+pre: 
+next: 1 
+in: 
+out: 
+use: 
+def: 
+global			
+int	10		a
+text			
+----------------------------------------
+----------------------------------------
+Block 1
+pre: 0 
+next: 2 28 
+in: a max min 
+out: j i a val max min 
+use: min a max 
+def: .fac0 val i .te3 j .te5 .label1 
+BEGIN			quicksort
+ASSIGN	min		.exp1
+ASSFA	a	.exp1	.fac0
+ASSIGN	.fac0		val
+ASSIGN	min		i
+ASSIGN	max		.te3
+ASSIGN	1		.te4
+SUB	.te3	.te4	.te3
+ASSIGN	.te3		j
+ASSIGN	max		.te5
+ASSIGN	min		.te6
+SUB	.te5	.te6	.te5
+ASSIGN	.te5		.exp4
+ASSIGN	1		.exp5
+BSE	.exp4	.exp5	.label1
+----------------------------------------
+----------------------------------------
+Block 2
+pre: 1 
+next: 3 
+in: j i a val max min 
+out: j i a val max min ttt 
+use: i 
+def: ttt 
+ASSIGN	i		ttt
+----------------------------------------
+----------------------------------------
+Block 3
+pre: 2 17 
+next: 4 18 
+in: j i a val max min ttt 
+out: j i a val max min ttt 
+use: i j 
+def: .label3 
+SET			.label2
+ASSIGN	i		.exp7
+ASSIGN	j		.exp8
+BLE	.exp7	.exp8	.label3
+----------------------------------------
+----------------------------------------
+Block 4
+pre: 3 9 
+next: 5 10 
+in: j i a val max min ttt 
+out: j i a val max min ttt 
+use: j i 
+def: .label5 
+SET			.label4
+ASSIGN	j		.exp9
+ASSIGN	i		.exp10
+BSE	.exp9	.exp10	.label5
+----------------------------------------
+----------------------------------------
+Block 5
+pre: 4 
+next: 6 7 
+in: j i a val max min ttt 
+out: j i a val max min ttt 
+use: j a val 
+def: .fac13 .label7 
+ASSIGN	j		.exp12
+ASSFA	a	.exp12	.fac13
+ASSIGN	.fac13		.exp11
+ASSIGN	val		.exp13
+BLE	.exp11	.exp13	.label7
+----------------------------------------
+----------------------------------------
+Block 6
+pre: 5 
+next: 7 
+in: j i a val max min 
+out: j i a val max min ttt 
+use: i j a 
+def: .fac17 .te19 ttt .te22 
+ASSIGN	i		.exp14
+ASSIGN	j		.exp16
+ASSFA	a	.exp16	.fac17
+ASSIGN	.fac17		.exp15
+ASSTA	.exp15	.exp14	a
+ASSIGN	i		.te19
+ASSIGN	1		.te20
+ADD	.te19	.te20	.te19
+ASSIGN	.te19		i
+ASSIGN	j		ttt
+ASSIGN	j		.te22
+ASSIGN	20		.te23
+SUB	.te22	.te23	.te22
+ASSIGN	.te22		j
+----------------------------------------
+----------------------------------------
+Block 7
+pre: 6 5 
+next: 8 9 
+in: j i a val max min ttt 
+out: j i a val max min ttt 
+use: j 
+def: .te24 .label9 
+SET			.label7
+ASSIGN	j		.te24
+ASSIGN	1		.te25
+SUB	.te24	.te25	.te24
+ASSIGN	.te24		j
+ASSIGN	j		.exp21
+ASSIGN	0		.exp22
+BS	.exp21	.exp22	.label9
+----------------------------------------
+----------------------------------------
+Block 8
+pre: 7 
+next: 9 
+in: j i a val max min 
+out: j i a val max min ttt 
+use: j 
+def: ttt 
+ASSIGN	j		ttt
+----------------------------------------
+----------------------------------------
+Block 9
+pre: 8 7 
+next: 4 
+in: j i a val max min ttt 
+out: j i a val max min ttt 
+use: 
+def: 
+SET			.label9
+GO			.label4
+----------------------------------------
+----------------------------------------
+Block 10
+pre: 4 
+next: 11 
+in: i a val max min ttt 
+out: i j a val max min ttt 
+use: ttt 
+def: j 
+SET			.label5
+ASSIGN	ttt		j
+----------------------------------------
+----------------------------------------
+Block 11
+pre: 10 16 
+next: 12 17 
+in: i j a val max min ttt 
+out: i j a val max min ttt 
+use: i j 
+def: .label11 
+SET			.label10
+ASSIGN	i		.exp25
+ASSIGN	j		.exp26
+BLE	.exp25	.exp26	.label11
+----------------------------------------
+----------------------------------------
+Block 12
+pre: 11 
+next: 13 14 
+in: i j a val max min ttt 
+out: i j a val max min ttt 
+use: i a val 
+def: .fac32 .label13 
+ASSIGN	i		.exp28
+ASSFA	a	.exp28	.fac32
+ASSIGN	.fac32		.exp27
+ASSIGN	val		.exp29
+BSE	.exp27	.exp29	.label13
+----------------------------------------
+----------------------------------------
+Block 13
+pre: 12 
+next: 14 
+in: i j a val max min 
+out: i j a val max min ttt 
+use: j i a 
+def: .fac36 ttt .te39 
+ASSIGN	j		.exp30
+ASSIGN	i		.exp32
+ASSFA	a	.exp32	.fac36
+ASSIGN	.fac36		.exp31
+ASSTA	.exp31	.exp30	a
+ASSIGN	i		ttt
+ASSIGN	i		.te39
+ASSIGN	20		.te40
+ADD	.te39	.te40	.te39
+ASSIGN	.te39		i
+----------------------------------------
+----------------------------------------
+Block 14
+pre: 13 12 
+next: 15 16 
+in: i j a val max min ttt 
+out: i j a val max min ttt 
+use: i 
+def: .te41 .label15 
+SET			.label13
+ASSIGN	i		.te41
+ASSIGN	1		.te42
+ADD	.te41	.te42	.te41
+ASSIGN	.te41		i
+ASSIGN	i		.exp36
+ASSIGN	10		.exp37
+BLE	.exp36	.exp37	.label15
+----------------------------------------
+----------------------------------------
+Block 15
+pre: 14 
+next: 16 
+in: i j a val max min 
+out: i j a val max min ttt 
+use: i 
+def: ttt 
+ASSIGN	i		ttt
+----------------------------------------
+----------------------------------------
+Block 16
+pre: 15 14 
+next: 11 
+in: i j a val max min ttt 
+out: i j a val max min ttt 
+use: 
+def: 
+SET			.label15
+GO			.label10
+----------------------------------------
+----------------------------------------
+Block 17
+pre: 11 
+next: 3 
+in: j a val max min ttt 
+out: j i a val max min ttt 
+use: ttt 
+def: i 
+SET			.label11
+ASSIGN	ttt		i
+GO			.label2
+----------------------------------------
+----------------------------------------
+Block 18
+pre: 3 
+next: 19 
+in: max i val min 
+out: max i 
+use: i val min 
+def: a 
+SET			.label3
+ASSIGN	i		.exp40
+ASSIGN	val		.exp41
+ASSTA	.exp41	.exp40	a
+ASSIGN	min		.exp42
+----------------------------------------
+----------------------------------------
+Block 19
+pre: 18 
+next: 20 
+in: max i 
+out: max i 
+use: 
+def: 
+PUSH			.exp42
+----------------------------------------
+----------------------------------------
+Block 20
+pre: 19 
+next: 21 
+in: max i 
+out: max i 
+use: i 
+def: 
+ASSIGN	i		.exp43
+----------------------------------------
+----------------------------------------
+Block 21
+pre: 20 
+next: 22 
+in: max i 
+out: max i 
+use: 
+def: 
+PUSH			.exp43
+----------------------------------------
+----------------------------------------
+Block 22
+pre: 21 
+next: 23 
+in: max i 
+out: max i 
+use: 
+def: 
+CALL			quicksort
+----------------------------------------
+----------------------------------------
+Block 23
+pre: 22 
+next: 24 
+in: max i 
+out: max 
+use: i 
+def: .te51 
+ASSIGN	i		.te51
+ASSIGN	1		.te52
+ADD	.te51	.te52	.te51
+ASSIGN	.te51		.exp44
+----------------------------------------
+----------------------------------------
+Block 24
+pre: 23 
+next: 25 
+in: max 
+out: max 
+use: 
+def: 
+PUSH			.exp44
+----------------------------------------
+----------------------------------------
+Block 25
+pre: 24 
+next: 26 
+in: max 
+out: 
+use: max 
+def: 
+ASSIGN	max		.exp45
+----------------------------------------
+----------------------------------------
+Block 26
+pre: 25 
+next: 27 
+in: 
+out: 
+use: 
+def: 
+PUSH			.exp45
+----------------------------------------
+----------------------------------------
+Block 27
+pre: 26 
+next: 28 
+in: 
+out: 
+use: 
+def: 
+CALL			quicksort
+----------------------------------------
+----------------------------------------
+Block 28
+pre: 27 1 
+next: 
+in: 
+out: 
+use: 
+def: 
+SET			.label1
+RET			
+----------------------------------------
+----------------------------------------
+Block 29
+pre: 
+next: 
+in: 
+out: 
+use: 
+def: 
+END			quicksort
+----------------------------------------
+----------------------------------------
+Block 30
+pre: 
+next: 31 
+in: tnum mm a 
+out: i tnum mm a 
+use: 
+def: i 
+BEGIN			main
+ASSIGN	0		i
+----------------------------------------
+----------------------------------------
+Block 31
+pre: 30 33 
+next: 32 34 
+in: i tnum mm a 
+out: i tnum mm a 
+use: i 
+def: .label17 
+SET			.label16
+ASSIGN	i		.exp1
+ASSIGN	10		.exp2
+BLE	.exp1	.exp2	.label17
+----------------------------------------
+----------------------------------------
+Block 32
+pre: 31 
+next: 33 
+in: i tnum mm 
+out: i tnum mm 
+use: 
+def: 
+RD			tnum
+----------------------------------------
+----------------------------------------
+Block 33
+pre: 32 
+next: 31 
+in: i tnum mm 
+out: i tnum mm a 
+use: i tnum 
+def: a .te5 
+ASSIGN	i		.exp3
+ASSIGN	tnum		.exp4
+ASSTA	.exp4	.exp3	a
+ASSIGN	i		.te5
+ASSIGN	1		.te6
+ADD	.te5	.te6	.te5
+ASSIGN	.te5		i
+GO			.label16
+----------------------------------------
+----------------------------------------
+Block 34
+pre: 31 
+next: 35 
+in: a mm 
+out: a 
+use: mm 
+def: mm 
+SET			.label17
+ASSIGN	0		mm
+ASSIGN	mm		.exp7
+----------------------------------------
+----------------------------------------
+Block 35
+pre: 34 
+next: 36 
+in: a 
+out: a 
+use: 
+def: 
+PUSH			.exp7
+----------------------------------------
+----------------------------------------
+Block 36
+pre: 35 
+next: 37 
+in: a 
+out: a 
+use: 
+def: 
+ASSIGN	10		.exp8
+----------------------------------------
+----------------------------------------
+Block 37
+pre: 36 
+next: 38 
+in: a 
+out: a 
+use: 
+def: 
+PUSH			.exp8
+----------------------------------------
+----------------------------------------
+Block 38
+pre: 37 
+next: 39 
+in: a 
+out: a 
+use: 
+def: 
+CALL			quicksort
+----------------------------------------
+----------------------------------------
+Block 39
+pre: 38 
+next: 40 
+in: a 
+out: i a 
+use: 
+def: i 
+ASSIGN	0		i
+----------------------------------------
+----------------------------------------
+Block 40
+pre: 39 44 
+next: 41 45 
+in: i a 
+out: i a 
+use: i 
+def: .label19 
+SET			.label18
+ASSIGN	i		.exp10
+ASSIGN	10		.exp11
+BLE	.exp10	.exp11	.label19
+----------------------------------------
+----------------------------------------
+Block 41
+pre: 40 
+next: 42 
+in: i a 
+out: i a 
+use: i a 
+def: .fac13 
+ASSIGN	i		.exp13
+ASSFA	a	.exp13	.fac13
+ASSIGN	.fac13		.exp12
+----------------------------------------
+----------------------------------------
+Block 42
+pre: 41 
+next: 43 
+in: i a 
+out: i a 
+use: 
+def: 
+PD			.exp12
+----------------------------------------
+----------------------------------------
+Block 43
+pre: 42 
+next: 44 
+in: i a 
+out: i a 
+use: 
+def: 
+PD	.String0	 	
+----------------------------------------
+----------------------------------------
+Block 44
+pre: 43 
+next: 40 
+in: i a 
+out: i a 
+use: i 
+def: .te15 
+ASSIGN	i		.te15
+ASSIGN	1		.te16
+ADD	.te15	.te16	.te15
+ASSIGN	.te15		i
+GO			.label18
+----------------------------------------
+----------------------------------------
+Block 45
+pre: 40 
+next: 
+in: 
+out: 
+use: 
+def: 
+SET			.label19
+RET			
+----------------------------------------
